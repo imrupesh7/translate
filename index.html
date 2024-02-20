@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1def09dae5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   
+
+
+    <div class="container">
+
+        <div class="flex-container">
+    <h1 id="text">Translate Your Line</h1>
+    
+
+    <input type="text" placeholder="place your text" 
+    onkeyup="document.getElementById('text').innerHTML=this.value">
+
+    <div class="google-button">
+        <div id="google_translate_element"></div></div>
+</div>
+</div>
+
+
+
+
+    <div class="github">
+        <a href="https://github.com/imrupesh7"> <i class="fab fa-github" aria-hidden="true"></i></a>
+    </div>
+ 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+ 
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+</body>
+</html>
